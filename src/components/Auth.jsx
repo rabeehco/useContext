@@ -2,9 +2,10 @@ import React, {useContext} from 'react'
 import AuthContext from '../store/auth-context'
 
 function Auth() {
+  // Now all the data stored in the context can
+  // be accessed with the auth variable
     const auth = useContext(AuthContext)
     const clicked = () => {
-      console.log(auth.status)
       auth.login()
     }
   return (
